@@ -5,6 +5,7 @@ import linkd from "./../images/icons8-linkedin-48.png";
 import git from "./../images/githubimg.png";
 import logo from "./../images/logo-1.png";
 import mail from "./../images/icons8-gmail.gif";
+import { Link } from "react-router-dom";
 
 
 function Footer(){
@@ -55,10 +56,10 @@ function Footer(){
                             </div>
                             <div className="footer-social-icon">
                                 <span>Follow us</span>
-                                <a href="/"><img src={insta}  width={34} alt="/"/></a>
-                                <a href="/"><img src={fb} width={40}  alt="/"/></a>
-                                <a href="/"><img src={linkd} width={40}  alt="/"/></a>
-                                <a href="/"><img src={git} width={42}  alt="/"/></a>
+                                <a href="https://www.instagram.com/hungry_learner.01/"><img src={insta}  width={34} alt="/"/></a>
+                                <a href="https://www.facebook.com/ayushkumar5167543"><img src={fb} width={40}  alt="/"/></a>
+                                <a href="https://www.linkedin.com/in/ayushkumar2025/"><img src={linkd} width={40}  alt="/"/></a>
+                                <a href="#"><img src={git} width={42}  alt="/"/></a>
                             </div>
                         </div>
                     </div>
@@ -68,10 +69,10 @@ function Footer(){
                                 <h3>Useful Links</h3>
                             </div>
                             <ul>
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/">Services</a></li>
-                                <li><a href="/">About us</a></li>
-                                <li><a href="/">Contact us</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#section1">Services</a></li>
+                                <li><Link to="/about">About us</Link></li>
+                                <li><a href="#section3">Contact</a></li>
                             
                                 
                             </ul>

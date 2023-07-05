@@ -1,5 +1,8 @@
 
 import logo from "./../images/logo-1.png";
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 function Navbar()
 {
@@ -17,19 +20,13 @@ function Navbar()
 			
 			{/* <!-- Navigation --> */}
 			<ul className="menu-list">
-				<li><a href="/">Home</a></li>
-				<li><a href="/">About</a></li>
-				<li><a href="/">Services</a></li>
-				<li><a href="/">Contact</a></li>
+				<li><Link to="/">Home</Link></li>
+				<li><Link to="/about">About</Link></li>
+				<li><a href="#section1">Services</a></li>
+				<li><a href="#section3">Contact</a></li>
 				<li><button className="btn">Login</button></li>
 				<li><button className="btn">Signup</button></li>
 			</ul>
-
-			<div className="humbarger">
-				<div className="bar"></div>
-				<div className="bar2 bar"></div>
-				<div className="bar"></div>
-			</div>
 		</nav>
     
 	</header>
