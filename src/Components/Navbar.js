@@ -1,39 +1,73 @@
 
-import logo from "./../images/logo-1.png";
+// import logo from "./../images/logo-1.png";
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import  { useEffect } from 'react';
+import $ from 'jquery'; // Import jQuery if needed
 
 
-function Navbar()
-{
-    return(
-       <>
+
+
+function Navbar() {
+
+
+
+
+  useEffect(() => {
+    // Hamburger Toggle
+    $('.humbarger').click(function (event) {
+      $('.menu-list').slideToggle(500);
+      event.preventDefault();
+    });
+  
+    $('.menu-list li a').click(function (event) {
+      if ($(window).width() < 768) {
+        $('.menu-list').slideUp(500);
+        event.preventDefault();
+      }
+    });
+  }, []);
+
+
+
+  return (
+ 
+<>
 
 {/* <!--====== Header Section Start ======--> */}
 	<header>
-		<nav className="navigation">
+		<nav class="navigation">
 
 			{/* <!-- Logo --> */}
-			<div className="logo">
-				<img src={logo} width={150} alt="/" />
+			<div class="logo">
+				<h1>LOGO</h1>
 			</div>
 			
 			{/* <!-- Navigation --> */}
-			<ul className="menu-list">
-				<li><Link to="/">Home</Link></li>
-				<li><Link to="/about">About</Link></li>
-				<li><a href="#section1">Services</a></li>
-				<li><a href="#section3">Contact</a></li>
-				<li><button className="btn">Login</button></li>
-				<li><button className="btn">Signup</button></li>
+			<ul class="menu-list">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#portfolio">Project</a></li>
+				<li><a href="#">Contact</a></li>
 			</ul>
+
+			<div class="humbarger">
+				<div class="bar"></div>
+				<div class="bar2 bar"></div>
+				<div class="bar"></div>
+			</div>
 		</nav>
     
+   	
 	</header>
 
+</>
 
-       </>
-    )
+
+
+
+  )
 }
 
 export default Navbar;

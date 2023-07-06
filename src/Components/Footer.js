@@ -5,6 +5,8 @@ import linkd from "./../images/icons8-linkedin-48.png";
 import git from "./../images/githubimg.png";
 import logo from "./../images/logo-1.png";
 import mail from "./../images/icons8-gmail.gif";
+import send from "./../images/sendbtn.png";
+
 import { Link } from "react-router-dom";
 
 
@@ -38,7 +40,7 @@ function Footer(){
                             <i className="far fa-envelope-open"></i>
                             <div className="cta-text">
                                 <h4>Mail us</h4>
-                                <span><img src={mail} alt="/"/></span>
+                                <span><a href="#section3"><img src={mail} alt="/"/></a></span>
                             </div>
                         </div>
                     </div>
@@ -89,7 +91,7 @@ function Footer(){
                             <div className="subscribe-form">
                                 <form action="#">
                                     <input type="text" placeholder="write your feedback here"/>
-                                    <button><i className="fab fa-telegram-plane"></i></button>
+                                    <button><img src={send} width={35} alt="/"/></button>
                                 </form>
                             </div>
                         </div>

@@ -2,7 +2,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer'
-import Carousel from './Carousel';
+// import Carousel from './Carousel';
 import Cards from './Cards';
 import Working from './Working';
 import Contact from './Contact';
@@ -12,7 +12,7 @@ const Home = () => {
 
         <>
             <Navbar />
-            <Carousel/>
+            {/* <Carousel/> */}
           
 
             <div>
