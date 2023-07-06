@@ -7,6 +7,7 @@ import logo from "./../images/logo-1.png";
 import mail from "./../images/icons8-gmail.gif";
 import send from "./../images/sendbtn.png";
 
+
 import { Link } from "react-router-dom";
 
 
@@ -40,7 +41,7 @@ function Footer(){
                             <i className="far fa-envelope-open"></i>
                             <div className="cta-text">
                                 <h4>Mail us</h4>
-                                <span><a href="#section3"><img src={mail} alt="/"/></a></span>
+                                <span><Link to="/contact"><img src={mail} alt="/"/></Link></span>
                             </div>
                         </div>
                     </div>
@@ -74,7 +75,7 @@ function Footer(){
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#section1">Services</a></li>
                                 <li><Link to="/about">About us</Link></li>
-                                <li><a href="#section3">Contact</a></li>
+                                <li><Link to="/contact">Contact</Link></li>
                             
                                 
                             </ul>

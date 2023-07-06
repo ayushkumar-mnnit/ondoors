@@ -2,17 +2,17 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer'
-// import Carousel from './Carousel';
+import Carousel from './Carousel';
 import Cards from './Cards';
 import Working from './Working';
-import Contact from './Contact';
+
 
 const Home = () => {
     return (
 
         <>
             <Navbar />
-            {/* <Carousel/> */}
+            <Carousel/>
           
 
             <div>
@@ -25,7 +25,7 @@ const Home = () => {
       </section>
 
       <section id="section3">
-        <Contact/>
+       <h1>section3</h1> 
       </section>
       
     </div>

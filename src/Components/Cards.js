@@ -11,7 +11,7 @@ function Cards(){
       <div className="section-header text-center">
         <h2 className="fw-bold fs-1">
           Our
-          <span className="b-class-secondary">Advertiser </span>Services
+          <span className="b-class-secondary"> Services</span>
         </h2>
         <p className="sec-icon"><i className="fa-solid fa-gear"></i></p>
       </div>
@@ -19,73 +19,68 @@ function Cards(){
     <div className="row mt-5 mt-md-4 row-cols-1 row-cols-sm-1 row-cols-md-3 justify-content-center">
       <div className="col">
         <div className="service-card">
-          <div className="icon-wrapper">
+          {/* <div className="icon-wrapper">
             <i className="fa-solid fa-chart-line"></i>
-          </div>
-          <h3>Tracking Lead</h3>
+          </div> */}
+          <h3>Home Services</h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Quisquam consequatur necessitatibus eaque.
+           Regular cleaning, cooking, gardening, looking after young ones and other household chores.
           </p>
         </div>
       </div>
       <div className="col">
         <div className="service-card">
-          <div className="icon-wrapper">
+          {/* <div className="icon-wrapper">
             <i className="fa-solid fa-arrows-down-to-people"></i>
-          </div>
-          <h3>Advanced Targeting solution</h3>
+          </div> */}
+          <h3>General Maintenance</h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Quisquam consequatur necessitatibus eaque.
+            Electrical repairs ( installations, wiring, lighting fixtures, and circuitry.), Plumbing service, Carpentary, Painting & white-washing Services and other home renovation works.
           </p>
         </div>
       </div>
       <div className="col">
         <div className="service-card">
-          <div className="icon-wrapper">
+          {/* <div className="icon-wrapper">
             <i className="fa-solid fa-globe"></i>
-          </div>
-          <h3>Global Reach & Quality Traffic</h3>
+          </div> */}
+          <h3>Appliance Maintenance</h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Quisquam consequatur necessitatibus eaque.
+          servicing of home appliances such as refrigerators, washing machines, dishwashers, and ovens.
+          Heating, ventilation, and air conditioning repairs, installations, maintenance, and duct cleaning.
           </p>
         </div>
       </div>
       <div className="col">
         <div className="service-card">
-          <div className="icon-wrapper">
+          {/* <div className="icon-wrapper">
             <i className="fa-solid fa-money-check-dollar"></i>
-          </div>
-          <h3>Flexible pricing models</h3>
+          </div> */}
+          <h3>Academic Support</h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Quisquam consequatur necessitatibus eaque.
+          For students and parents seeking for private tutors to provide personalized instruction and assistance in various subjects
           </p>
         </div>
       </div>
       <div className="col">
         <div className="service-card">
-          <div className="icon-wrapper">
+          {/* <div className="icon-wrapper">
             <i className="fa-regular fa-circle-check"></i>
-          </div>
-          <h3>Advanced optimization technologies & methodologies</h3>
+          </div> */}
+          <h3>Grocery</h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Quisquam consequatur necessitatibus eaque.
+            Fresh grocery accessibility via local vendors and grocers of your locality
           </p>
         </div>
       </div>
       <div className="col">
         <div className="service-card">
-          <div className="icon-wrapper">
+          {/* <div className="icon-wrapper">
             <i className="fa-solid fa-people-group"></i>
-          </div>
-          <h3>Dedicated account management team</h3>
+          </div> */}
+          <h3>Health Care</h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Quisquam consequatur necessitatibus eaque.
+            Consult trusted medical practitioners specially in case of emergency situations like during night, when immediate visit to a hospital is not possible.
           </p>
         </div>
       </div>
