@@ -1,72 +1,49 @@
 
+
+import logo from "./../images/logo-1.png";
 import React from "react";
 import Navbar from "./Navbar";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
+// import logo from "./../images/logo-1.png";
 
 function Login(){
+
+
     return(
 
-      <>
-      
-<Navbar/>
+<>
+<Navbar hlogo=<img src={logo} width={150} height={70} alt="/"  /> />
 
-<div className="login-wrap">
-  <div className="login-html">
-    <input id="tab-1" type="radio" name="tab" className="sign-in" checked/><label for="tab-1" className="tab">Sign In</label>
-    <input id="tab-2" type="radio" name="tab" className="sign-up"/><label for="tab-2" className="tab">Sign Up</label>
-    <div className="login-form">
-      <div className="sign-in-htm">
-        <div className="group">
-          <label for="user" className="label">Username</label>
-          <input id="user" type="text" className="input"/>
+<div className="wrapper">
+        <div className="logohd">
+            <img src={logo} width={150} alt="/"/>
         </div>
-        <div className="group">
-          <label for="pass" className="label">Password</label>
-          <input id="pass" type="password" className="input" data-type="password"/>
+        <div className="texthd">
+            Login to your ondoors account
         </div>
-        <div className="group">
-          <input id="check" type="checkbox" className="check" checked/>
-          <label for="check"><span className="icon"></span> Keep me Signed in</label>
+        <form className="p-3 mt-3">
+            <div className="form-field d-flex align-items-center">
+                <span className="far fa-user"></span>
+                <input type="text" name="userName" id="userName" placeholder="Username"/>
+            </div>
+            <div className="form-field d-flex align-items-center">
+                <span className="fas fa-key"></span>
+                <input type="password" name="password" id="pwd" placeholder="Password"/>
+            </div>
+            <button className="btn mt-1">Login</button>
+        </form>
+        <div className="text-center">
+            <a href="/">Forget password?</a>
         </div>
-        <div className="group">
-          <input type="submit" className="button" value="Sign In"/>
-        </div>
-        <div className="hr"></div>
-        <div className="foot-lnk">
-          <a href="#forgot">Forgot Password?</a>
-        </div>
-      </div>
-      <div className="sign-up-htm">
-        <div className="group">
-          <label for="user" className="label">Username</label>
-          <input id="user" type="text" className="input"/>
-        </div>
-        <div className="group">
-          <label for="pass" className="label">Password</label>
-          <input id="pass" type="password" className="input" data-type="password"/>
-        </div>
-        <div className="group">
-          <label for="pass" className="label">Repeat Password</label>
-          <input id="pass" type="password" className="input" data-type="password"/>
-        </div>
-        <div className="group">
-          <label for="pass" className="label">Email Address</label>
-          <input id="pass" type="text" className="input"/>
-        </div>
-        <div className="group">
-          <input type="submit" className="button" value="Sign Up"/>
-        </div>
-        <div className="hr"></div>
-        <div className="foot-lnk">
-          <label for="tab-1">Already Member</label>
-        </div>
-      </div>
+        <div className="regd">
+            New user ?
+            <button className="reg"><Link to="/register">Register</Link></button>
+
+            </div>
     </div>
-  </div>
-</div>
 
-        </>
+      </>
     )
 }
 

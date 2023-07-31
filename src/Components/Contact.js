@@ -1,6 +1,6 @@
 
 import mail from "./../images/mailsicon.png";
-
+import logo from "./../images/logo-1.png";
 import Navbar from "./Navbar";
 
 function Contact() {
@@ -8,7 +8,7 @@ function Contact() {
       <>
   
 
-      <Navbar/>
+      <Navbar hlogo=<img src={logo} width={150} height={70} alt="/"  />/>
     
 
 <div className="form-box">
